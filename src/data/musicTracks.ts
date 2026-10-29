@@ -12,6 +12,24 @@ export const MUSIC_TRACKS: MusicTrack[] = [
   },
   {
     id: 'track-2',
+    title: 'Baila con el Lag',
+    artist: 'DJ Timeout 504 & The Ping Phantoms',
+    album: 'Latencias del Averno',
+    file: './music/Baila_con_el_lag.mp4',
+    cover: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=400&q=80',
+    vibes: 'Electro Funk de Alta Latencia',
+  },
+  {
+    id: 'track-3',
+    title: 'Halloween en la Tienda',
+    artist: 'The Ghostly Cashiers & Tribu TI',
+    album: 'Pasillo Número 13',
+    file: './music/Halloween_en_la_Tienda.mp4',
+    cover: 'https://images.unsplash.com/photo-1508873696983-2df5293cb395?auto=format&fit=crop&w=400&q=80',
+    vibes: 'Fiesta Macabra en el Supermercado',
+  },
+  {
+    id: 'track-4',
     title: 'El Fantasma del Servidor',
     artist: 'DevOps Necromancer',
     album: 'Bugs del Más Allá',
@@ -20,7 +38,7 @@ export const MUSIC_TRACKS: MusicTrack[] = [
     vibes: 'Synthwave Espectral 404',
   },
   {
-    id: 'track-3',
+    id: 'track-5',
     title: 'Cuchillos y Soldadores',
     artist: 'Squad Sabor Asesino',
     album: 'Filo Sangriento',
@@ -29,7 +47,7 @@ export const MUSIC_TRACKS: MusicTrack[] = [
     vibes: 'Adrenalina & Cortes Rápidos',
   },
   {
-    id: 'track-4',
+    id: 'track-6',
     title: 'Abrazo Espectral',
     artist: 'La Dama de la Nieve Culinaria',
     album: 'Suspiros de la Cripta',
@@ -38,7 +56,7 @@ export const MUSIC_TRACKS: MusicTrack[] = [
     vibes: 'Balada Gótica de Medianoche',
   },
   {
-    id: 'track-5',
+    id: 'track-7',
     title: 'La Tienda Está en Llamas',
     artist: 'Infernal Chefs TI',
     album: 'Fuego del Averno 666',
@@ -47,7 +65,7 @@ export const MUSIC_TRACKS: MusicTrack[] = [
     vibes: 'Rock Pirotécnico de Pesadilla',
   },
   {
-    id: 'track-6',
+    id: 'track-8',
     title: 'Billetera Muerta en el Callejón',
     artist: 'The Black Friday Phantoms',
     album: 'Descuentos Mortales',
@@ -56,7 +74,7 @@ export const MUSIC_TRACKS: MusicTrack[] = [
     vibes: 'Blues Fúnebre Financiero',
   },
   {
-    id: 'track-7',
+    id: 'track-9',
     title: 'La Leyenda de los Chefs',
     artist: 'Coro Macabro de TI',
     album: 'Crónicas de la Cocina Oscura',

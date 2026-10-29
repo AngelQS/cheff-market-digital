@@ -114,7 +114,7 @@ export const Hero: React.FC<HeroProps> = ({ onExplore, onMeetSquad }) => {
               </div>
               <div>
                 <h4 className="font-bold text-sm text-slate-200">Player Spotify</h4>
-                <p className="text-xs text-slate-400">7 pistas de audio tenebrosas</p>
+                <p className="text-xs text-slate-400">9 pistas de audio tenebrosas</p>
               </div>
             </div>
           </div>

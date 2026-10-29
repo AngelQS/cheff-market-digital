@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { ShoppingBag, Music, Volume2, VolumeX, Menu, X, Skull, Ghost, Sparkles } from 'lucide-react';
+import { ShoppingBag, Music, Volume2, VolumeX, Menu, X, Skull, Ghost, Sparkles, Sun, Moon } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { useAudio } from '../context/AudioContext';
+import { useTheme } from '../context/ThemeContext';
 
 interface NavbarProps {
   onNavigate: (sectionId: string) => void;
@@ -10,6 +11,7 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
   const { totalItems, setIsCartOpen, soundEnabled, setSoundEnabled } = useCart();
   const { isPlaying, togglePlay, currentTrack, togglePlaylist } = useAudio();
+  const { toggleTheme, isDark } = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleNavClick = (id: string) => {
@@ -88,8 +90,27 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
             </div>
 
             {/* Right Action Controls */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2.5 sm:gap-3">
               
+              {/* Theme Switcher Button (Blanco / Negro) */}
+              <button
+                onClick={toggleTheme}
+                title={isDark ? "Cambiar a Tema Blanco (Quirófano)" : "Cambiar a Tema Negro (Inframundo)"}
+                className="p-2.5 rounded-full bg-slate-900/80 border border-red-950/60 text-slate-300 hover:text-amber-400 hover:border-amber-500/50 transition flex items-center gap-1.5 shadow-sm"
+              >
+                {isDark ? (
+                  <>
+                    <Sun className="w-4 h-4 text-amber-400 animate-spin-slow" />
+                    <span className="hidden xl:inline text-[11px] font-bold text-amber-300">Blanco</span>
+                  </>
+                ) : (
+                  <>
+                    <Moon className="w-4 h-4 text-indigo-400" />
+                    <span className="hidden xl:inline text-[11px] font-bold text-slate-700">Negro</span>
+                  </>
+                )}
+              </button>
+
               {/* Sound FX Toggle */}
               <button
                 onClick={() => setSoundEnabled(!soundEnabled)}
@@ -171,10 +192,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
               className="w-full text-left py-2 px-3 rounded-lg text-slate-200 hover:bg-red-950/40 hover:text-red-400 font-medium flex items-center gap-2"
             >
               <Music className="w-4 h-4 text-emerald-400" />
-              Banda Sonora de Halloween (7 Tracks)
+              Banda Sonora de Halloween (9 Tracks)
             </button>
             <div className="pt-2 border-t border-slate-800 flex items-center justify-between">
-              <span className="text-xs text-slate-400">Pista actual: {currentTrack.title}</span>
+              <button
+                onClick={toggleTheme}
+                className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-xs text-slate-200"
+              >
+                {isDark ? <Sun className="w-3.5 h-3.5 text-amber-400" /> : <Moon className="w-3.5 h-3.5 text-indigo-400" />}
+                <span>Tema: {isDark ? 'Blanco' : 'Negro'}</span>
+              </button>
               <button
                 onClick={togglePlay}
                 className="px-3 py-1 text-xs rounded-full bg-red-800 text-white font-medium"

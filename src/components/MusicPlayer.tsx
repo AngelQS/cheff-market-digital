@@ -236,11 +236,11 @@ export const MusicPlayer: React.FC = () => {
               {/* Playlist drawer toggle button */}
               <button
                 onClick={togglePlaylist}
-                title="Ver lista de pistas (7 canciones)"
+                title="Ver lista de pistas (9 canciones)"
                 className="p-2 text-slate-300 hover:text-white hover:bg-slate-800/80 rounded-xl transition flex items-center gap-1.5 text-xs font-semibold"
               >
                 <ListMusic className="w-4 h-4 text-red-500" />
-                <span className="hidden xl:inline">Pistas (7)</span>
+                <span className="hidden xl:inline">Pistas (9)</span>
               </button>
 
               {/* Volume Slider (desktop) */}
