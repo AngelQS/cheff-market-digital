@@ -32,7 +32,7 @@ export const Hero: React.FC<HeroProps> = ({ onExplore, onMeetSquad }) => {
           {/* Large Logo & Creepy Title */}
           <div className="relative mb-6">
             <img 
-              src="/images/logo.png" 
+              src="./images/logo.png" 
               alt="Cheff Market Digital del Terror" 
               className="h-28 sm:h-36 md:h-44 w-auto object-contain mx-auto drop-shadow-[0_0_35px_rgba(229,25,32,0.65)] hover:scale-105 transition-transform duration-500"
             />

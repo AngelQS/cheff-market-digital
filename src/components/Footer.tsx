@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
               <img
-                src="/images/logo.png"
+                src="./images/logo.png"
                 alt="Cheff Market Digital"
                 className="h-12 w-auto object-contain"
               />

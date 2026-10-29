@@ -45,7 +45,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
               <div className="relative">
                 <div className="absolute -inset-1 bg-red-600 rounded-full blur opacity-30 group-hover:opacity-75 transition duration-300"></div>
                 <img 
-                  src="/images/logo.png" 
+                  src="./images/logo.png" 
                   alt="Cheff Market Digital" 
                   className="relative h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-[0_0_12px_rgba(229,25,32,0.6)]"
                 />
