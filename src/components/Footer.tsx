@@ -73,7 +73,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a href="#soundtrack" className="hover:text-red-400 transition">
-                  Banda Sonora de Halloween (9 Tracks)
+                  Banda Sonora de Halloween (10 Tracks)
                 </a>
               </li>
             </ul>

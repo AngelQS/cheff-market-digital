@@ -192,7 +192,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
               className="w-full text-left py-2 px-3 rounded-lg text-slate-200 hover:bg-red-950/40 hover:text-red-400 font-medium flex items-center gap-2"
             >
               <Music className="w-4 h-4 text-emerald-400" />
-              Banda Sonora de Halloween (9 Tracks)
+              Banda Sonora de Halloween (10 Tracks)
             </button>
             <div className="pt-2 border-t border-slate-800 flex items-center justify-between">
               <button

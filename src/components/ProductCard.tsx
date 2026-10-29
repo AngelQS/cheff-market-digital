@@ -19,7 +19,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onOpenModal }
   return (
     <div 
       onClick={() => onOpenModal(product)}
-      className="group relative bg-[#11121c] rounded-2xl border border-red-950/60 hover:border-red-600/70 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-red-950/50 flex flex-col cursor-pointer transform hover:-translate-y-1"
+      className="group relative bg-white dark:bg-[#11121c] rounded-2xl border border-slate-200 dark:border-red-950/60 hover:border-red-500/70 overflow-hidden transition-all duration-300 shadow-md hover:shadow-2xl dark:hover:shadow-red-950/50 flex flex-col cursor-pointer transform hover:-translate-y-1"
     >
       {/* Top Image Container */}
       <div className="relative h-52 sm:h-56 w-full overflow-hidden bg-slate-900">
@@ -84,30 +84,30 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onOpenModal }
           </div>
 
           {/* Product Name */}
-          <h3 className="font-bold text-slate-100 text-base sm:text-lg group-hover:text-red-400 transition-colors line-clamp-2 leading-snug">
+          <h3 className="font-bold text-slate-900 dark:text-slate-100 text-base sm:text-lg group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors line-clamp-2 leading-snug">
             {product.name}
           </h3>
 
           {/* Spooky Warning Snippet */}
-          <p className="mt-2 text-xs text-slate-400 line-clamp-2 italic">
+          <p className="mt-2 text-xs text-slate-600 dark:text-slate-400 line-clamp-2 italic">
             "{product.spookyWarning}"
           </p>
         </div>
 
         {/* Price & Action Button */}
-        <div className="mt-5 pt-3 border-t border-slate-800/80 flex items-center justify-between">
+        <div className="mt-5 pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
           <div>
             <div className="flex items-baseline gap-2">
-              <span className="text-xl sm:text-2xl font-black text-white font-mono">
+              <span className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white font-mono">
                 S/. {product.price.toFixed(2)}
               </span>
               {product.originalPrice && (
-                <span className="text-xs text-slate-500 line-through">
+                <span className="text-xs text-slate-400 dark:text-slate-500 line-through">
                   S/. {product.originalPrice.toFixed(2)}
                 </span>
               )}
             </div>
-            <span className="text-[10px] text-emerald-400 font-medium">
+            <span className="text-[10px] text-emerald-600 dark:text-emerald-400 font-medium">
               Stock: {product.stock} disponibles
             </span>
           </div>

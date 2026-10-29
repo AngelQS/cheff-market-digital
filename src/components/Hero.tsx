@@ -44,8 +44,8 @@ export const Hero: React.FC<HeroProps> = ({ onExplore, onMeetSquad }) => {
           </div>
 
           {/* Subtitle / Punchline */}
-          <p className="text-base sm:text-xl text-slate-300 max-w-2xl font-normal leading-relaxed mb-8">
-            El primer marketplace gastronómico donde los <span className="text-red-400 font-bold">28 maestros culinarios</span> de la Tribu TI Digital cocinan los manjares más sangrientos, pócimas electrizantes y frutas del inframundo.
+          <p className="text-base sm:text-xl text-slate-700 dark:text-slate-300 max-w-2xl font-normal leading-relaxed mb-8">
+            El primer marketplace gastronómico donde los <span className="text-red-600 dark:text-red-400 font-bold">28 maestros culinarios</span> de la Tribu TI Digital cocinan los manjares más sangrientos, pócimas electrizantes y frutas del inframundo.
           </p>
 
           {/* Action CTAs */}
@@ -77,44 +77,44 @@ export const Hero: React.FC<HeroProps> = ({ onExplore, onMeetSquad }) => {
           </div>
 
           {/* Key Trust & Contest Highlights */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full pt-6 border-t border-red-950/60 text-left">
-            <div className="p-4 rounded-xl bg-[#0f101a]/80 border border-red-950/50 flex items-start gap-3">
-              <div className="p-2 rounded-lg bg-red-950/50 text-red-400 border border-red-900/40">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full pt-6 border-t border-rose-200 dark:border-red-950/60 text-left">
+            <div className="p-4 rounded-xl bg-white dark:bg-[#0f101a]/80 border border-slate-200 dark:border-red-950/50 shadow-sm flex items-start gap-3">
+              <div className="p-2 rounded-lg bg-rose-100 dark:bg-red-950/50 text-red-600 dark:text-red-400 border border-rose-200 dark:border-red-900/40">
                 <Skull className="w-5 h-5" />
               </div>
               <div>
-                <h4 className="font-bold text-sm text-slate-200">28 Chefs Malditos</h4>
-                <p className="text-xs text-slate-400">Fotos reales de todo el squad TI</p>
+                <h4 className="font-bold text-sm text-slate-900 dark:text-slate-200">28 Chefs Malditos</h4>
+                <p className="text-xs text-slate-500 dark:text-slate-400">Fotos reales de todo el squad TI</p>
               </div>
             </div>
 
-            <div className="p-4 rounded-xl bg-[#0f101a]/80 border border-red-950/50 flex items-start gap-3">
-              <div className="p-2 rounded-lg bg-amber-950/50 text-amber-400 border border-amber-900/40">
+            <div className="p-4 rounded-xl bg-white dark:bg-[#0f101a]/80 border border-slate-200 dark:border-red-950/50 shadow-sm flex items-start gap-3">
+              <div className="p-2 rounded-lg bg-amber-100 dark:bg-amber-950/50 text-amber-600 dark:text-amber-400 border border-amber-200 dark:border-amber-900/40">
                 <Zap className="w-5 h-5" />
               </div>
               <div>
-                <h4 className="font-bold text-sm text-slate-200">Carrito por Sesión</h4>
-                <p className="text-xs text-slate-400">Multiplataforma móvil y web</p>
+                <h4 className="font-bold text-sm text-slate-900 dark:text-slate-200">Carrito por Sesión</h4>
+                <p className="text-xs text-slate-500 dark:text-slate-400">Multiplataforma móvil y web</p>
               </div>
             </div>
 
-            <div className="p-4 rounded-xl bg-[#0f101a]/80 border border-red-950/50 flex items-start gap-3">
-              <div className="p-2 rounded-lg bg-purple-950/50 text-purple-400 border border-purple-900/40">
+            <div className="p-4 rounded-xl bg-white dark:bg-[#0f101a]/80 border border-slate-200 dark:border-red-950/50 shadow-sm flex items-start gap-3">
+              <div className="p-2 rounded-lg bg-purple-100 dark:bg-purple-950/50 text-purple-600 dark:text-purple-400 border border-purple-200 dark:border-purple-900/40">
                 <ShieldCheck className="w-5 h-5" />
               </div>
               <div>
-                <h4 className="font-bold text-sm text-slate-200">Pasarela Fake 666</h4>
-                <p className="text-xs text-slate-400">Simulación real con PAN falso</p>
+                <h4 className="font-bold text-sm text-slate-900 dark:text-slate-200">Pasarela Fake 666</h4>
+                <p className="text-xs text-slate-500 dark:text-slate-400">Simulación real con PAN falso</p>
               </div>
             </div>
 
-            <div className="p-4 rounded-xl bg-[#0f101a]/80 border border-red-950/50 flex items-start gap-3">
-              <div className="p-2 rounded-lg bg-emerald-950/50 text-emerald-400 border border-emerald-900/40">
+            <div className="p-4 rounded-xl bg-white dark:bg-[#0f101a]/80 border border-slate-200 dark:border-red-950/50 shadow-sm flex items-start gap-3">
+              <div className="p-2 rounded-lg bg-emerald-100 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-900/40">
                 <Sparkles className="w-5 h-5" />
               </div>
               <div>
-                <h4 className="font-bold text-sm text-slate-200">Player Spotify</h4>
-                <p className="text-xs text-slate-400">9 pistas de audio tenebrosas</p>
+                <h4 className="font-bold text-sm text-slate-900 dark:text-slate-200">Player Spotify</h4>
+                <p className="text-xs text-slate-500 dark:text-slate-400">10 pistas de audio tenebrosas</p>
               </div>
             </div>
           </div>

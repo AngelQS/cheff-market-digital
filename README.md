@@ -36,16 +36,17 @@ Bienvenido a la experiencia oficial del **Cheff Market Digital del Terror**, un 
 
 ### 🎵 5. Reproductor de Música Estilo Spotify
 - Barra inferior fija estilo Spotify con estética Dark Horror y acentos rojo sangre.
-- 9 pistas musicales originales de Halloween:
+- 10 pistas musicales originales de Halloween:
   1. *La cocina del terror*
   2. *Baila con el lag*
-  3. *Halloween en la tienda*
-  4. *El fantasma del servidor*
-  5. *Cuchillos y soldadores*
-  6. *Abrazo espectral*
-  7. *La tienda esta en llamas*
-  8. *Billetera muerta en el callejón*
-  9. *La leyenda de los chefs*
+  3. *El servidor en llamas*
+  4. *Halloween en la tienda*
+  5. *El fantasma del servidor*
+  6. *Cuchillos y soldadores*
+  7. *Abrazo espectral*
+  8. *La tienda esta en llamas*
+  9. *Billetera muerta en el callejón*
+  10. *La leyenda de los chefs*
 - Controles completos: Reproducir/Pausar, Anterior, Siguiente, Barra de progreso interactiva (seekable), Control de volumen, Mute y ecualizador visual dinámico.
 - Drawer de Playlist para ver y seleccionar cualquiera de los temas.
 

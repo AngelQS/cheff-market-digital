@@ -55,17 +55,17 @@ export const ProductCatalog: React.FC = () => {
       {/* Section Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
         <div>
-          <div className="inline-flex items-center gap-2 text-red-500 font-semibold text-xs uppercase tracking-widest mb-2">
+          <div className="inline-flex items-center gap-2 text-red-600 dark:text-red-500 font-semibold text-xs uppercase tracking-widest mb-2">
             <Sparkles className="w-4 h-4" />
             <span>Despensa de la Tribu TI Digital</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight flex items-center gap-3">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight flex items-center gap-3">
             <span>Mercado Gastronómico Maldito</span>
-            <span className="font-['Creepster'] text-red-500 text-glow-red text-2xl hidden sm:inline">
+            <span className="font-['Creepster'] text-red-600 dark:text-red-500 text-glow-red text-2xl hidden sm:inline">
               666
             </span>
           </h2>
-          <p className="text-slate-400 text-sm mt-1 max-w-xl">
+          <p className="text-slate-600 dark:text-slate-400 text-sm mt-1 max-w-xl">
             Frutas frescas, verduras del huerto de brujas, pócimas con cafeína y cortes selectos elaborados por los 28 integrantes de nuestro squad.
           </p>
         </div>

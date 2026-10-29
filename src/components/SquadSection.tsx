@@ -67,7 +67,7 @@ export const SquadSection: React.FC = () => {
   }, [selectedGroup, searchChef]);
 
   return (
-    <section id="squad" className="py-20 bg-gradient-to-b from-[#090A0F] via-[#10121d] to-[#090A0F] border-t border-red-950/60 relative">
+    <section id="squad" className="py-20 bg-gradient-to-b from-white via-rose-50/40 to-white dark:from-[#090A0F] dark:via-[#10121d] dark:to-[#090A0F] border-t border-rose-200 dark:border-red-950/60 relative transition-colors duration-300">
       
       {/* Decorative ambient background */}
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-red-600/10 rounded-full blur-[160px] pointer-events-none" />
@@ -77,16 +77,16 @@ export const SquadSection: React.FC = () => {
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950/70 border border-red-700/50 text-red-300 text-xs font-semibold mb-3">
-            <Users className="w-3.5 h-3.5 text-red-400" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-rose-100 dark:bg-red-950/70 border border-rose-300 dark:border-red-700/50 text-red-700 dark:text-red-300 text-xs font-semibold mb-3">
+            <Users className="w-3.5 h-3.5 text-red-500 dark:text-red-400" />
             <span>Tribu TI Digital • Halloween 2026</span>
           </div>
 
-          <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
-            Los 28 Chefs del <span className="text-red-500 font-['Creepster'] text-glow-red">Terror</span>
+          <h2 className="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white tracking-tight">
+            Los 28 Chefs del <span className="text-red-600 dark:text-red-500 font-['Creepster'] text-glow-red">Terror</span>
           </h2>
           
-          <p className="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed">
+          <p className="mt-3 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
             Conoce a cada uno de los integrantes del squad vestidos con sus uniformes culinarios y armados con cuchillas de precisión. ¡Nuestra tribu lista para conquistar el concurso!
           </p>
         </div>
@@ -134,10 +134,10 @@ export const SquadSection: React.FC = () => {
             <div
               key={chef.id}
               onClick={() => setActiveChef(chef)}
-              className="group bg-[#12131e] rounded-2xl border border-red-950/50 hover:border-red-600/60 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-red-950/50 flex flex-col cursor-pointer transform hover:-translate-y-1.5"
+              className="group bg-white dark:bg-[#12131e] rounded-2xl border border-slate-200 dark:border-red-950/50 hover:border-red-500/70 overflow-hidden transition-all duration-300 shadow-md hover:shadow-2xl dark:hover:shadow-red-950/50 flex flex-col cursor-pointer transform hover:-translate-y-1.5"
             >
               {/* Photo */}
-              <div className="relative h-64 sm:h-72 w-full overflow-hidden bg-slate-950">
+              <div className="relative h-64 sm:h-72 w-full overflow-hidden bg-slate-900">
                 <img
                   src={chef.image}
                   alt={chef.name}
@@ -146,7 +146,7 @@ export const SquadSection: React.FC = () => {
                 />
                 
                 {/* Gradient vignette */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#12131e] via-transparent to-black/20" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20" />
 
                 {/* Terror badge */}
                 <div className="absolute top-3 right-3 flex items-center gap-1 bg-black/80 backdrop-blur-sm px-2.5 py-1 rounded-full border border-red-900/50">
@@ -158,7 +158,7 @@ export const SquadSection: React.FC = () => {
 
                 {/* Squad badge */}
                 <div className="absolute bottom-3 left-3">
-                  <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider bg-red-950/80 text-red-200 px-2 py-0.5 rounded border border-red-800/40">
+                  <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider bg-red-950/90 text-red-200 px-2.5 py-0.5 rounded border border-red-800/40">
                     <Flame className="w-2.5 h-2.5 text-amber-400" />
                     {chef.squadTeam}
                   </span>
@@ -168,25 +168,25 @@ export const SquadSection: React.FC = () => {
               {/* Chef Info */}
               <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="font-extrabold text-white text-base sm:text-lg group-hover:text-red-400 transition-colors leading-snug">
+                  <h3 className="font-extrabold text-slate-900 dark:text-white text-base sm:text-lg group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors leading-snug">
                     {chef.name}
                   </h3>
-                  <p className="text-xs font-semibold text-slate-400 mt-0.5">
+                  <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 mt-0.5">
                     {chef.role}
                   </p>
 
-                  <p className="text-xs text-slate-400 mt-3 line-clamp-2 italic">
+                  <p className="text-xs text-slate-600 dark:text-slate-400 mt-3 line-clamp-2 italic">
                     {chef.quote}
                   </p>
                 </div>
 
-                <div className="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-                  <div className="flex items-center gap-1.5 text-slate-400 truncate mr-2">
+                <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs">
+                  <div className="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 truncate mr-2">
                     <Swords className="w-3.5 h-3.5 text-red-500 shrink-0" />
                     <span className="truncate text-[11px]">{chef.weapon}</span>
                   </div>
 
-                  <span className="text-red-400 font-bold group-hover:underline text-[11px] shrink-0 flex items-center gap-1">
+                  <span className="text-red-600 dark:text-red-400 font-bold group-hover:underline text-[11px] shrink-0 flex items-center gap-1">
                     <Sparkles className="w-3 h-3" />
                     Ficha
                   </span>
